@@ -1,0 +1,34 @@
+.btn {
+  padding: 12px 60px;
+  font-size: 1.4rem;
+  line-height: 1.72;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $dark-gray;
+  border: $input-border;
+  cursor: pointer;
+  
+  &:hover {
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.btn-more {
+  padding: 3px 20px;
+  font-size: 1.4rem;
+  line-height: 1.72;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  color: $dark-gray;
+  border-left: $button-border;
+  border-right: $button-border;
+  cursor: pointer;
+  
+  &:hover {
+    color: $white;
+    background-color: $dark-gray;
+  }
+}

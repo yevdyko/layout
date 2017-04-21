@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html::before  {
+  content: '';
+	position: fixed;
+	width: 100%;
+	height: 345px;
+	background-color: $anthracite;
+	z-index: -1;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.page-wrapper {
+  width: 1530px;
+  height: auto;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: $ghost-white;
+  z-index: 2;
+}
+
+.content-wrapper {
+  width: 1530px;
+  margin: 0 auto;
+  padding-bottom: 411px;
+}

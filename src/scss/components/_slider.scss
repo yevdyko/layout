@@ -1,0 +1,89 @@
+.slider {
+  position: relative;
+  padding-top: 55px;
+  
+  &__item img {
+    width: 1530px;
+    height: 580px;
+  }
+  
+  &__meta {
+    position: absolute;
+    top: 55%;
+    left: 100px;
+    width: 475px;
+    color: $white;
+    transform: translateY(-50%);
+  }
+  
+  &__description {
+    display: block;
+    margin-bottom: 13px;
+    font-size: 1.8rem;
+    font-weight: $font-weight-semibold;
+    line-height: 1.5;
+    letter-spacing: 4px;
+  }
+  
+  &__title {
+    letter-spacing: 5px;
+    
+    a:hover {
+      color: $white;
+    }
+  }
+  
+  &__pagination {
+    position: absolute;
+    top: 54%;
+    right: 80px;
+    transform: translateY(-50%);
+    
+    span {
+      display: block;
+      width: 8px;
+      height: 8px;
+      margin-bottom: 9px;
+      background-color: transparent;
+      border: $slider-border;
+      cursor: pointer;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    .active {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+  
+  &__control {
+    position: absolute; 
+    top: 52%;
+    right: -68px;
+    font-size: 0;
+    transform: rotate(270deg);
+  }
+  
+  &__button {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: $white;
+    cursor: pointer;
+    
+    &:hover {
+      color: rgba(255, 255, 255, 0.4);  
+    }
+  }
+  
+  &__text {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 1.4rem;
+    line-height: 1.72;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $white;
+  }
+}

@@ -1,0 +1,71 @@
+// Font Stack
+$hind: 'Hind', Tahoma, Geneva, sans-serif;
+$montserrat: 'Montserrat', Tahoma, Geneva, sans-serif;
+$open-sans: 'Open Sans', Tahoma, Geneva, sans-serif;
+
+// Typography
+$base-font-family: $hind;
+$heading-font-family: $montserrat;
+
+// Font Styles
+$base-font-style: normal;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weigh-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$base-font-weight: $font-weight-light;
+
+// Font Sizes
+$base-font-size: 1.5rem;
+
+// Line Height
+$base-line-height: 1.87;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+
+// Colors
+$dark-gray: #212121;
+$anthracite: #212429;
+$charcoal: #464646;
+$medium-gray: #999;
+$light-gray: #ddd;
+$white: #fff;
+$black: #000;
+$copyright-black: #17191c; 
+$ghost-white: #f9f9fb;
+$white-smoke: #f7f7f7;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $white;
+
+// Border
+$base-border-color: $light-gray;
+$header-border-color: #3c3c3c;
+$slider-border-color: $white;
+$input-border-color: #f3f3f3;
+$button-border-color: #d7d7d7;
+$content-border-color: #f1f1f3;
+$footer-border-color: rgba(255, 255, 255, 0.4);
+
+$base-border: 1px solid $base-border-color;
+$header-border: 1px solid $header-border-color;
+$slider-border: 1px solid $slider-border-color;
+$input-border: 1px solid $input-border-color;
+$button-border: 1px solid $button-border-color;
+$content-border: 1px solid $content-border-color;
+$divider: 2px solid $footer-border-color;
+$footer-border: 1px solid $footer-border-color;
+
+// Background Colors
+$base-background-color: $ghost-white;
+
+// Animations
+$base-duration: 200ms;
+$base-timing: ease;

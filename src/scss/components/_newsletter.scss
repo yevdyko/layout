@@ -1,0 +1,45 @@
+.newsletter {
+  @include clearfix;
+  
+  width: 1530px;
+  padding: 23px 0 19px;
+  background-color: $white-smoke;
+  border: $input-border;
+  
+  &__title {
+    float: left;
+    width: 230px;
+    margin-right: 30px;
+    padding-left: 30px;
+    letter-spacing: 3px;
+  }
+  
+  &__input {
+    float: left;
+    width: 450px;
+    margin-top: 3px;
+    
+    &:first-child {
+      margin-right: 28px;
+    }
+  }
+  
+  &__button {
+    float: left;
+    margin: 3px 0 0 30px;
+  }
+}
+
+input {
+  width: 100%;
+  padding: 10px 25px;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $dark-gray;
+  border: $input-border;
+  outline: none;
+}

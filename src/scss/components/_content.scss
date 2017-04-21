@@ -1,0 +1,276 @@
+.content {
+  @include clearfix;
+  
+  margin-top: 77px;
+  margin-bottom: 59px;
+  
+  &__column {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    
+    &:first-child {
+      padding-left: 0;
+    }
+    
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  
+  &__date {
+    font-size: 1.4rem;
+    line-height: 1.72;
+    font-family: $base-font-family;
+    font-weight: $font-weight-medium;
+    margin-bottom: 13px;
+    letter-spacing: 1px;
+    color: $medium-gray;
+    text-transform: uppercase;
+  }
+  
+  &__text p {
+    letter-spacing: 1.4px;
+  }
+  
+  &__button {
+    margin: 35px 0 58px;
+    font-weight: $font-weight-medium;
+  }
+  
+  &__item {
+    position: relative;
+    margin-bottom: 28px;
+    padding: 52px 25px 15px;
+    text-align: center;
+    background-color: $white;
+    border: $content-border;
+    
+    &:hover {
+      box-shadow: 0px 3px 25.52px 3.48px rgba(112, 112, 112, 0.49);
+      border: 1px solid #ddd;
+    }
+    
+    &--empty {
+      min-height: 514px;
+    }
+    
+    &--skate {
+      margin-bottom: 0;
+      padding: 34px 30px 15px;
+      background: #fff url(../img/skateboard.jpg) 0 0 no-repeat;
+      
+      .content__button {
+        margin-top: 36px;
+        margin-bottom: 26px;
+      }
+    }
+    
+    &--image {
+      margin-bottom: 45px;
+      padding: 0;
+    }
+    
+    &--quote {
+      margin-bottom: 47px;
+      padding: 50px 30px 28px;
+      background-color: $anthracite;
+      
+      .content__text p {
+        font-size: 1.7rem;
+        line-height: 1.65;
+        letter-spacing: 1.5px;
+        color: $white;
+      }
+    }
+    
+    &--video {
+      margin-bottom: 0;
+      padding: 0;
+      
+      .content__main {
+        padding: 36px 25px 15px;
+      }
+    }
+    
+    &--link {
+      min-height: 175px;
+      margin-bottom: 45px;
+      padding: 60px 30px;
+      background-color: $anthracite;
+    }
+    
+    &--box {
+      min-height: 288px;
+      margin-bottom: 0;
+      background-color: $anthracite;
+    }
+    
+    &--blank {
+      min-height: 511px;
+      margin-bottom: 47px;
+    }
+    
+    &--without {
+      margin-bottom: 47px;
+    }
+    
+    &--audio {
+      min-height: 455px;
+      margin-bottom: 0;
+      
+      .content__date {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 40px;
+    height: 35px;
+    color: $white;
+    background-color: $dark-gray;
+    box-shadow: 0 1px 3px 0 rgba(213, 213, 213, 0.75);
+    transform: translate(-50%, -50%);
+    
+    &--white {
+      color: $anthracite;
+      background-color: $white;
+    }
+    
+    i {
+      padding-top: 10px;
+    }
+  }
+  
+  &__category {
+    display: block;
+    margin-bottom: 5px;
+    line-height: 1;
+    
+    a {
+      font-size: 1.4rem;
+      line-height: 1.72;
+      font-family: $hind;
+      font-weight: $font-weight-medium;
+      color: $medium-gray;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+  }
+  
+  &__title {
+    margin-bottom: 7px;
+    
+    a {
+      color: $dark-gray;
+    }
+  }
+  
+  &__list {
+    font-size: 0;
+    color: $charcoal;
+    
+    li {
+      display: inline-block;
+      font-size: 1.4rem;
+      vertical-align: top;
+    }
+  }
+  
+  &__comments {
+    display: block;
+    float: left;
+    
+    i {
+      color: $charcoal;
+    }
+  }
+  
+  &__link {
+    margin-left: 6px;
+    font-size: 1.4rem;
+    line-height: 1.72;
+    color: $medium-gray;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    
+    &:hover {
+      color: $medium-gray;
+    }
+  }
+  
+  &__share {
+    display: block;
+    float: right;
+    
+    li {
+      margin-right: 20px;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    
+    a {
+      color: $charcoal;
+    }
+  }
+  
+  &__image {
+    display: block;
+    margin: 0;
+  }
+  
+  &__main {
+    position: relative;
+    padding: 57px 25px 15px;
+  }
+  
+  &__name {
+    margin-top: 27px;
+    font-size: 1.4rem;
+    line-height: 1.72;
+    font-weight: $font-weigh-regular;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: $medium-gray;
+  }
+  
+  &__video iframe {
+    display: block;
+    width: 360px;
+    max-width: 100%;
+    height: 255px;
+    margin: 0;
+    border: 0;
+  }
+  
+  &__bottom {
+    @include clearfix;
+    
+    margin-top: 48px;
+  }
+  
+  &__adv {
+    display: block;  
+    
+    a {
+      font-size: 1.7rem;
+      line-height: 1.65;
+      letter-spacing: 1.5px;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+  }
+  
+  &__audio iframe {
+    width: 134px;
+    height: 134px;
+    border: 0;
+    overflow: hidden;
+  }
+}

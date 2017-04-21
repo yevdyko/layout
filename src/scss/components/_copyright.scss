@@ -1,0 +1,43 @@
+.copyright {
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  background-color: $copyright-black;
+  
+  &__list {
+    padding: 9px 0 8px;
+    font-size: 0;
+    
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      font-size: 1.4rem;
+      line-height: 1.72;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      vertical-align: top;
+      
+      a {
+        position: relative;
+        font-size: 1.4rem;
+        line-height: 1.72;
+        color: rgba(255, 255, 255, 0.4);
+        letter-spacing: 1px;
+        text-decoration: none;
+        
+        &:hover {
+          color: $white;
+        }
+        
+        &::before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: -15px;
+          height: 11px;
+          border-right: $divider;
+        }
+      }
+    }
+  }
+}
